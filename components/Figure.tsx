@@ -29,3 +29,4 @@ export const Figure: React.FC<FigureProps> = ({
     </figure>
   );
 };
+

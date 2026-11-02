@@ -49,3 +49,4 @@ export const skillsData: SkillCategory[] = [
     classificationNote: "Foundational computer science principles, complexity analysis, and systems."
   }
 ];
+

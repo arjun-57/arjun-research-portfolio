@@ -97,19 +97,21 @@ export const Hero: React.FC = () => {
           <span>Download Resume</span>
         </a>
 
-        {/* GitHub Placeholder */}
+        {/* GitHub */}
         <a
           href={profileData.github.url}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 px-3 py-2 border border-academic-border dark:border-academic-borderDark bg-paper-surface dark:bg-paper-surfaceDark text-ink-secondary dark:text-ink-secondaryDark rounded-sm hover:text-ink dark:hover:text-ink-dark transition-all"
-          title="GitHub Profile (Placeholder - to be linked by Arjun R)"
+          title="GitHub Profile (@arjun-57)"
         >
           <Github className="w-3.5 h-3.5" />
           <span>GitHub</span>
-          <span className="text-[9px] px-1 bg-gray-100 dark:bg-gray-800 text-ink-muted dark:text-ink-mutedDark rounded border border-academic-border dark:border-academic-borderDark">
-            Placeholder
-          </span>
+          {profileData.github.isPlaceholder && (
+            <span className="text-[9px] px-1 bg-gray-100 dark:bg-gray-800 text-ink-muted dark:text-ink-mutedDark rounded border border-academic-border dark:border-academic-borderDark">
+              Placeholder
+            </span>
+          )}
         </a>
 
         {/* LinkedIn Placeholder */}
@@ -142,3 +144,4 @@ export const Hero: React.FC = () => {
     </section>
   );
 };
+

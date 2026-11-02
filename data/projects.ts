@@ -136,9 +136,9 @@ export const projectsData: ProjectData[] = [
     },
     links: {
       github: {
-        url: "https://github.com/placeholder-arjunr/resilient-microgrid-multiagent",
-        isPlaceholder: true,
-        label: "Repository [Placeholder]"
+        url: "https://github.com/arjun-57/MARL",
+        isPlaceholder: false,
+        label: "GitHub Repository"
       }
     }
   },
@@ -231,9 +231,9 @@ export const projectsData: ProjectData[] = [
     },
     links: {
       github: {
-        url: "https://github.com/placeholder-arjunr/contra-adversarial-research-engine",
-        isPlaceholder: true,
-        label: "Repository [Placeholder]"
+        url: "https://github.com/arjun-57/Research-Contra",
+        isPlaceholder: false,
+        label: "GitHub Repository"
       }
     }
   },
@@ -329,10 +329,11 @@ export const projectsData: ProjectData[] = [
     },
     links: {
       github: {
-        url: "https://github.com/placeholder-arjunr/sine2times-diagnostic-tutor",
-        isPlaceholder: true,
-        label: "Repository [Placeholder]"
+        url: "https://github.com/arjun-57/Sin2Times",
+        isPlaceholder: false,
+        label: "GitHub Repository"
       }
     }
   }
 ];
+

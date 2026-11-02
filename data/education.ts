@@ -64,3 +64,4 @@ export const certificationsData: CertificationItem[] = [
     badgeType: "Foundational"
   }
 ];
+

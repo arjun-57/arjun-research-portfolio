@@ -136,3 +136,4 @@ export const researchData: ResearchData = {
   note      = {Reported demographic parity reduction: 17.9% to 2.3%; Accuracy: 92.8%}
 }`
 };
+

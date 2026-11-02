@@ -95,9 +95,10 @@ export const appendixItems: AppendixItem[] = [
     label: "Appendix C. GitHub Code Repositories",
     description: "Source code repositories, benchmark harnesses, and documentation for engineering projects.",
     format: "Git Repository",
-    actionLabel: "Open GitHub Profile [Placeholder]",
-    url: "https://github.com/placeholder-arjunr",
-    isAvailable: false,
-    statusTag: "Placeholder Link"
+    actionLabel: "Open GitHub Profile (@arjun-57)",
+    url: "https://github.com/arjun-57",
+    isAvailable: true,
+    statusTag: "Ready for Download"
   }
 ];
+

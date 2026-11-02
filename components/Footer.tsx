@@ -64,7 +64,7 @@ export const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   className="hover:text-academic-blue dark:hover:text-blue-400 flex items-center gap-1"
                 >
-                  <span>GitHub Profile [Placeholder]</span>
+                  <span>GitHub Profile (@arjun-57)</span>
                 </a>
               </li>
               <li>
@@ -113,3 +113,4 @@ export const Footer: React.FC = () => {
     </footer>
   );
 };
+

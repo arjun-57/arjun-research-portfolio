@@ -44,8 +44,8 @@ export const profileData: ProfileData = {
     isPlaceholder: true
   },
   github: {
-    url: "https://github.com/placeholder-arjunr",
-    isPlaceholder: true
+    url: "https://github.com/arjun-57",
+    isPlaceholder: false
   },
   resumePdfUrl: "/resume/Arjun_R_Resume.pdf",
   paperPdfUrl: "/papers/Bias_Free_AI_Placement_ICISC2026.pdf",
@@ -74,3 +74,4 @@ export const profileData: ProfileData = {
     { attribute: "Location", details: "Chennai, India" }
   ]
 };
+

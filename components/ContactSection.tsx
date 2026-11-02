@@ -104,7 +104,7 @@ export const ContactSection: React.FC = () => {
               <span>LinkedIn [Placeholder]</span>
             </a>
 
-            {/* GitHub Placeholder */}
+            {/* GitHub */}
             <a
               href={profileData.github.url}
               target="_blank"
@@ -112,7 +112,7 @@ export const ContactSection: React.FC = () => {
               className="inline-flex items-center gap-1.5 px-4 py-2.5 border border-academic-border dark:border-academic-borderDark bg-paper-bg dark:bg-gray-800 text-ink dark:text-ink-dark rounded-sm hover:border-academic-blue dark:hover:border-blue-400 transition-colors"
             >
               <Github className="w-4 h-4" />
-              <span>GitHub [Placeholder]</span>
+              <span>GitHub (@arjun-57)</span>
             </a>
           </div>
 
@@ -126,3 +126,4 @@ export const ContactSection: React.FC = () => {
     </section>
   );
 };
+
