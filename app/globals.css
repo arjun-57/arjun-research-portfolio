@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FAF9F6;
+  --foreground: #171717;
+  --paper-bg: #FAF9F6;
+  --paper-surface: #FFFFFF;
+  --paper-border: #DDDDDD;
+  --academic-blue: #243B64;
+}
+
+.dark {
+  --background: #111418;
+  --foreground: #E8E8E8;
+  --paper-bg: #111418;
+  --paper-surface: #181D24;
+  --paper-border: #2D3748;
+  --academic-blue: #5B84C4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Academic Paper Elevation & Borders */
+.academic-paper {
+  background-color: #FAF9F6;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+}
+
+.dark .academic-paper {
+  background-color: #151920;
+  box-shadow: 0 4px 24px -2px rgba(0, 0, 0, 0.4);
+}
+
+/* Thin Academic Rules */
+.academic-divider {
+  height: 1px;
+  background-color: #DDDDDD;
+  border: none;
+  margin: 1.5rem 0;
+}
+
+.dark .academic-divider {
+  background-color: #2D3748;
+}
+
+.academic-double-divider {
+  border-top: 1.5px solid #171717;
+  border-bottom: 0.5px solid #171717;
+  height: 4px;
+  margin: 1.5rem 0;
+}
+
+.dark .academic-double-divider {
+  border-top: 1.5px solid #E8E8E8;
+  border-bottom: 0.5px solid #E8E8E8;
+}
+
+/* Custom Academic Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F0EC;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1A1F26;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C4C4C0;
+  border-radius: 2px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3B4452;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #243B64;
+}
+
+/* Print Stylesheet for True Academic Paper PDF / Print */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+
+  .academic-paper {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  a {
+    text-decoration: underline !important;
+    color: #000000 !important;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 80%;
+  }
+
+  .break-inside-avoid {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
