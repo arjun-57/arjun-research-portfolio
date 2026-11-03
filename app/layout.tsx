@@ -1,68 +1,60 @@
 import type { Metadata, Viewport } from "next";
-import { Lora, Inter, JetBrains_Mono } from "next/font/google";
+import { STIX_Two_Text, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
-const serifFont = Lora({
+const serifFont = STIX_Two_Text({
   subsets: ["latin"],
   variable: "--font-serif",
   display: "swap",
   style: ["normal", "italic"],
 });
 
-const sansFont = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap",
-});
-
-const monoFont = JetBrains_Mono({
+const monoFont = IBM_Plex_Mono({
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
   variable: "--font-mono",
   display: "swap",
 });
 
 export const viewport: Viewport = {
-  themeColor: "#243B64",
+  themeColor: "#1b1b1f",
   width: "device-width",
   initialScale: 1,
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://arjun-research-portfolio.vercel.app"),
-  title: "Arjun R | AI Developer & Research Engineer",
+  title: "Arjun R | Forward Deployed Engineer (AI & Enterprise Systems)",
   description:
-    "Academic and engineering portfolio of Arjun R, AI Developer, Research Engineer, and Software Developer at SRM Institute of Science and Technology. Research in fairness-aware machine learning (ICISC 2026), multi-agent systems, Generative AI, and backend software engineering.",
+    "I get embedded in messy real-world operations and ship AI systems people can trust. Every system I build has a layer that checks the AI. Field reports from legal, real-estate, and energy operations.",
   keywords: [
     "Arjun R",
-    "AI Developer",
-    "Research Engineer",
-    "Software Developer",
+    "Forward Deployed Engineer",
+    "FDE",
+    "AI Systems",
+    "Enterprise AI",
     "SRM Institute of Science and Technology",
     "Fairlearn",
-    "Fairness-Aware Machine Learning",
-    "ICISC 2026",
     "Multi-Agent Systems",
-    "Generative AI",
-    "RAG",
-    "Chennai India"
+    "KNS Law Chambers",
+    "Grand Magnum Housing"
   ],
-  authors: [{ name: "Arjun R", url: "https://arjun-research-portfolio.vercel.app" }],
+  authors: [{ name: "Arjun R", url: "https://github.com/arjun-57" }],
   creator: "Arjun R",
-  publisher: "Arjun R",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://arjun-research-portfolio.vercel.app",
-    title: "Arjun R | AI Developer & Research Engineer",
+    title: "Arjun R | Forward Deployed Engineer (AI Systems)",
     description:
-      "Academic and engineering portfolio of Arjun R. Primary research: 'Bias-Free AI-Driven Placement Automation Using Rule-Augmented Machine Learning' (ICISC 2026). Hands-on software engineering projects in multi-agent systems and diagnostic AI.",
-    siteName: "Arjun R Research Portfolio",
+      "Field reports from legal, real estate, and energy operations. Trust layers, verification gates, and human-in-the-loop AI systems.",
+    siteName: "Arjun R — Forward Deployed AI Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arjun R | AI Developer & Research Engineer",
+    title: "Arjun R | Forward Deployed Engineer (AI Systems)",
     description:
-      "Interactive academic paper-styled portfolio. Fairness-aware ML, multi-agent systems, and software engineering.",
+      "Field reports from legal, real estate, and energy operations. Every system I build has a layer that checks the AI.",
   },
   robots: {
     index: true,
@@ -79,44 +71,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Arjun R",
-    jobTitle: ["AI Developer", "Research Engineer", "Software Developer"],
-    url: "https://arjun-research-portfolio.vercel.app",
-    email: "mailto:arjunr3773@gmail.com",
-    telephone: "+91 63859 20987",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Chennai",
-      addressCountry: "IN",
-    },
-    alumniOf: {
-      "@type": "CollegeOrUniversity",
-      name: "SRM Institute of Science and Technology",
-      department: "Department of Artificial Intelligence",
-    },
-    knowsAbout: [
-      "Artificial Intelligence",
-      "Fairness-Aware Machine Learning",
-      "Multi-Agent Systems",
-      "Generative AI",
-      "Retrieval-Augmented Generation",
-      "Backend Software Engineering",
-    ],
-  };
-
   return (
     <html lang="en" className="scroll-smooth">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
       <body
-        className={`${serifFont.variable} ${sansFont.variable} ${monoFont.variable} bg-paper-bg text-ink min-h-screen transition-colors duration-200 selection:bg-academic-blue/15 selection:text-academic-blue dark:selection:bg-blue-900/40 dark:selection:text-blue-300`}
+        className={`${serifFont.variable} ${monoFont.variable} font-serif min-h-screen bg-paper-bg text-ink dark:bg-paper-darkBg dark:text-ink-dark transition-colors duration-200 selection:bg-accent/15 selection:text-accent dark:selection:bg-accent-dark/20 dark:selection:text-accent-dark`}
       >
         {children}
       </body>

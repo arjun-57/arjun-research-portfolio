@@ -3,98 +3,96 @@
 @tailwind utilities;
 
 :root {
-  --background: #FAF9F6;
-  --foreground: #171717;
-  --paper-bg: #FAF9F6;
-  --paper-surface: #FFFFFF;
-  --paper-border: #DDDDDD;
-  --academic-blue: #243B64;
+  --paper-bg: #fbfaf6;
+  --paper-surface: #ffffff;
+  --paper-border: #e2dfd7;
+  --ink: #1b1b1f;
+  --ink-secondary: #55555c;
+  --accent: #a11d1d;
 }
 
 .dark {
-  --background: #111418;
-  --foreground: #E8E8E8;
-  --paper-bg: #111418;
-  --paper-surface: #181D24;
-  --paper-border: #2D3748;
-  --academic-blue: #5B84C4;
+  --paper-bg: #15161a;
+  --paper-surface: #1a1c22;
+  --paper-border: #2c2e35;
+  --ink: #e6e6e8;
+  --ink-secondary: #9a9aab;
+  --accent: #ff7b72;
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--paper-bg);
+  color: var(--ink);
 }
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--paper-bg);
+  color: var(--ink);
+  font-family: var(--font-serif), 'STIX Two Text', Georgia, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Academic Paper Elevation & Borders */
-.academic-paper {
-  background-color: #FAF9F6;
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+/* Formal Academic Horizontal Rules */
+.paper-rule-thick {
+  border-top: 2px solid var(--ink);
 }
 
-.dark .academic-paper {
-  background-color: #151920;
-  box-shadow: 0 4px 24px -2px rgba(0, 0, 0, 0.4);
+.paper-rule-thin {
+  border-top: 1px solid var(--paper-border);
 }
 
-/* Thin Academic Rules */
-.academic-divider {
-  height: 1px;
-  background-color: #DDDDDD;
-  border: none;
-  margin: 1.5rem 0;
+.paper-rule-double {
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  height: 5px;
 }
 
-.dark .academic-divider {
-  background-color: #2D3748;
+/* Formal LaTeX Table Rules */
+.table-booktabs {
+  width: 100%;
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
 }
 
-.academic-double-divider {
-  border-top: 1.5px solid #171717;
-  border-bottom: 0.5px solid #171717;
-  height: 4px;
-  margin: 1.5rem 0;
+.table-booktabs thead th {
+  border-bottom: 1px solid var(--ink);
+  padding: 0.5rem 0.75rem;
+  font-family: var(--font-mono), monospace;
+  font-weight: 600;
+  text-align: left;
 }
 
-.dark .academic-double-divider {
-  border-top: 1.5px solid #E8E8E8;
-  border-bottom: 0.5px solid #E8E8E8;
+.table-booktabs tbody td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--paper-border);
 }
 
-/* Custom Academic Scrollbar */
+.table-booktabs tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #F1F0EC;
-}
-
-.dark ::-webkit-scrollbar-track {
-  background: #1A1F26;
+  background: var(--paper-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C4C4C0;
+  background: #c8c5bc;
   border-radius: 2px;
 }
 
 .dark ::-webkit-scrollbar-thumb {
-  background: #3B4452;
+  background: #3a3d47;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #243B64;
-}
-
-/* Print Stylesheet for True Academic Paper PDF / Print */
+/* Print Stylesheet */
 @media print {
   body {
     background-color: #ffffff !important;
@@ -104,27 +102,4 @@ body {
   .no-print {
     display: none !important;
   }
-
-  .academic-paper {
-    box-shadow: none !important;
-    border: none !important;
-    padding: 0 !important;
-    max-width: 100% !important;
-  }
-
-  a {
-    text-decoration: underline !important;
-    color: #000000 !important;
-  }
-
-  a[href^="http"]:after {
-    content: " (" attr(href) ")";
-    font-size: 80%;
-  }
-
-  .break-inside-avoid {
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
 }
-
