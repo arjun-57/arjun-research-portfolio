@@ -1,58 +1,66 @@
 import React from "react";
-import { Navbar } from "@/components/Navbar";
-import { Hero } from "@/components/Hero";
-import { AbstractSection } from "@/components/AbstractSection";
-import { IntroductionSection } from "@/components/IntroductionSection";
-import { ResearchSection } from "@/components/ResearchSection";
-import { ExperienceSection } from "@/components/ExperienceSection";
-import { ProjectsSection } from "@/components/ProjectsSection";
-import { SkillsSection } from "@/components/SkillsSection";
-import { EducationSection } from "@/components/EducationSection";
-import { ContactSection } from "@/components/ContactSection";
-import { ReferencesSection } from "@/components/ReferencesSection";
-import { TableOfContents } from "@/components/TableOfContents";
-import { BackToTop } from "@/components/BackToTop";
-import { Footer } from "@/components/Footer";
+import { TopBar } from "@/components/fde/TopBar";
+import { TitleBlock } from "@/components/fde/TitleBlock";
+import { Section1Intro } from "@/components/fde/Section1Intro";
+import { Section2FieldReports } from "@/components/fde/Section2FieldReports";
+import { Section3Systems } from "@/components/fde/Section3Systems";
+import { Section4Table1TrustLayers } from "@/components/fde/Section4Table1TrustLayers";
+import { Section5Publication } from "@/components/fde/Section5Publication";
+import { Section6Toolkit } from "@/components/fde/Section6Toolkit";
+import { Section7Leadership } from "@/components/fde/Section7Leadership";
+import { Section8Contact } from "@/components/fde/Section8Contact";
+import { ReferencesList } from "@/components/fde/ReferencesList";
 
-export default function Home() {
+export default function FdePortfolioPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-paper-bg dark:bg-paper-darkBg text-ink dark:text-ink-dark transition-colors duration-200">
-      {/* Navigation Masthead */}
-      <Navbar />
+    <div className="min-h-screen bg-paper-bg text-ink dark:bg-paper-darkBg dark:text-ink-dark transition-colors duration-200">
+      {/* Sticky Academic Bar */}
+      <TopBar isProjectPage={false} />
 
-      {/* Main Reading Stage */}
-      <div className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 w-full">
-        <div className="flex gap-8 justify-center items-start">
-          {/* Main Paper Document Container */}
-          <main className="w-full max-w-4xl academic-paper bg-paper-surface dark:bg-paper-surfaceDark border border-academic-border dark:border-academic-borderDark px-6 sm:px-10 md:px-14 py-8 sm:py-12 rounded-sm transition-colors duration-200">
-            {/* Title Page / Hero */}
-            <Hero />
+      {/* Main Journal Paper Sheet */}
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
+        {/* Full-Width Masthead & Abstract */}
+        <TitleBlock />
 
-            {/* Abstract */}
-            <AbstractSection />
+        {/* Centrepiece: Table 1 (Trust Layers) Placed Prominently Across the Page */}
+        <Section4Table1TrustLayers />
 
-            {/* Academic Content Sections in Exact Order */}
-            <IntroductionSection />
-            <ResearchSection />
-            <ExperienceSection />
-            <ProjectsSection />
-            <SkillsSection />
-            <EducationSection />
-            <ContactSection />
-            <ReferencesSection />
-          </main>
+        {/* Two-Column Academic Grid for Field Reports & Systems */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
+          {/* Column A: How I Work & Enterprise Field Reports */}
+          <div className="space-y-8">
+            <Section1Intro />
+            <Section2FieldReports />
+            <Section5Publication />
+          </div>
 
-          {/* Sticky Table of Contents (Desktop Sidebar) */}
-          <TableOfContents />
+          {/* Column B: Deployed Systems & Technical Case Studies */}
+          <div className="space-y-8">
+            <Section3Systems />
+            <Section6Toolkit />
+            <Section7Leadership />
+          </div>
         </div>
-      </div>
 
-      {/* Back to top floating trigger */}
-      <BackToTop />
+        {/* Academic Double Rule */}
+        <div className="paper-rule-double my-10" />
 
-      {/* Academic Colophon / Footer */}
-      <Footer />
+        {/* Closing Contact & BibTeX Citation */}
+        <Section8Contact />
+
+        {/* Academic References */}
+        <ReferencesList />
+
+        {/* Colophon Footer */}
+        <footer className="mt-8 pt-4 border-t border-paper-border dark:border-paper-borderDark text-[11px] font-mono text-ink-muted dark:text-ink-mutedDark flex flex-col sm:flex-row items-center justify-between gap-2">
+          <div>
+            Typeset in STIX Two Text &amp; IBM Plex Mono • Next.js Static Export
+          </div>
+          <div>
+            Arjun R • Forward Deployed AI Engineer • Chennai, India
+          </div>
+        </footer>
+      </main>
     </div>
   );
 }
-

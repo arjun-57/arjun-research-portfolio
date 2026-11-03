@@ -1,0 +1,123 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Type /Catalog
+  /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+  /Type /Pages
+  /Kids [3 0 R]
+  /Count 1
+>>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 595.28 841.89]
+  /Resources <<
+    /Font <<
+      /F1 4 0 R
+    >>
+  >>
+  /Contents 5 0 R
+>>
+endobj
+4 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica
+>>
+endobj
+5 0 obj
+<<
+  /Length 2580
+>>
+stream
+BT
+/F1 18 Tf
+50 780 Td
+(Curriculum Vitae - Arjun R) Tj
+/F1 12 Tf
+0 -24 Td
+(Academic and Engineering Profile | B.Tech Artificial Intelligence) Tj
+0 -16 Td
+(------------------------------------------------------------------------------------------------) Tj
+0 -24 Td
+/F1 10 Tf
+(ARJUN R - AI Developer | Research Engineer | Software Developer) Tj
+0 -14 Td
+(Location: Chennai, India | Email: arjunr3773@gmail.com | Phone: +91 63859 20987) Tj
+0 -14 Td
+(Education: B.Tech in Artificial Intelligence, SRM Institute of Science and Technology \(2023-2027\), CGPA: 8.13/10) Tj
+0 -14 Td
+0 -14 Td
+(SUMMARY:) Tj
+0 -14 Td
+(Artificial Intelligence undergraduate with engineering internship experience and applied machine learning research.) Tj
+0 -14 Td
+(Focused on fairness-aware ML, multi-agent systems, Generative AI, RAG, and backend software engineering.) Tj
+0 -14 Td
+0 -14 Td
+(RESEARCH CONTRIBUTIONS:) Tj
+0 -14 Td
+(- Bias-Free AI-Driven Placement Automation Using Rule-Augmented Machine Learning \(ICISC 2026\)) Tj
+0 -14 Td
+(  Demographic parity disparity reduced from 17.9% to 2.3% with 92.8% hiring classification accuracy.) Tj
+0 -14 Td
+(  Evaluated across 1,200 candidate records and 50 corporate recruiting profiles.) Tj
+0 -14 Td
+0 -14 Td
+(ENGINEERING INTERNSHIPS:) Tj
+0 -14 Td
+(- KNS Law Chambers \(Software Developer Intern, Jan 2025 - Dec 2025\)) Tj
+0 -14 Td
+(  * Built agentic property intelligence system indexing multi-bank auction records and flagging ownership conflicts.) Tj
+0 -14 Td
+(  * Developed internal compliance auditing platform with structured verification check gates.) Tj
+0 -14 Td
+(- Grand Magnum Housing Pvt. Ltd. \(Software Developer Intern, Jun 2025 - Aug 2025\)) Tj
+0 -14 Td
+(  * Developed executive operations dashboard to monitor cross-department activities and task escalation.) Tj
+0 -14 Td
+0 -14 Td
+(TECHNICAL PROJECTS:) Tj
+0 -14 Td
+(- Resilient Multi-Agent Energy Management System \(FastAPI, Pandapower, Gymnasium, RAG, LLM Copilot\)) Tj
+0 -14 Td
+(- CONTRA: Adversarial Multi-Agent Research Engine \(FastAPI, Gemini, Next.js, Pydantic, RAG\)) Tj
+0 -14 Td
+(- Sine2Times: Diagnostic Mathematics Tutor \(FastAPI, React, SymPy, Bayesian Knowledge Tracing\)) Tj
+0 -14 Td
+0 -14 Td
+(TECHNICAL SKILLS:) Tj
+0 -14 Td
+(Languages: Python, Java, C, C++, SQL | ML/AI: Generative AI, LLMs, RAG, Multi-Agent Systems, Scikit-learn, PyTorch) Tj
+0 -14 Td
+(Frameworks: FastAPI, React, Next.js, Pandapower, SymPy | Fundamentals: Algorithms, DBMS, OOP, OS) Tj
+0 -14 Td
+0 -14 Td
+(Note: Full formal CV document placeholder. Replace with your camera-ready PDF file.) Tj
+0 -14 Td
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000262 00000 n 
+0000000341 00000 n 
+trailer
+<<
+  /Size 6
+  /Root 1 0 R
+>>
+startxref
+3030
+%%EOF
