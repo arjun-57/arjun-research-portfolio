@@ -120,3 +120,4 @@ export const Section6Toolkit: React.FC = () => {
     </section>
   );
 };
+

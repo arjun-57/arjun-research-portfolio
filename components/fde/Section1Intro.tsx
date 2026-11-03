@@ -57,3 +57,4 @@ export const Section1Intro: React.FC = () => {
     </section>
   );
 };
+

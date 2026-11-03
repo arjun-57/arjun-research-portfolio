@@ -166,3 +166,4 @@ export const Section2FieldReports: React.FC = () => {
     </section>
   );
 };
+

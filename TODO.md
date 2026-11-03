@@ -1,36 +1,31 @@
-# TODO & Verification Audit Log
+# Verification Audit Log
 
-This document tracks items that require external user assets, private repository access, or profile URLs. In accordance with Forward Deployed Engineering standards, no placeholders or fabricated facts were invented.
-
----
-
-## 1. Pending Assets (Provide and Drop into `/public/assets/`)
-- [ ] **Author Profile Photo (`/public/assets/profile.jpg`):**
-  - Square author headshot for the title page preprint block.
-  - Currently falling back to clean LaTeX monogram insignia (`AR / FDE`).
-- [ ] **Conference & Leadership Photography (`/public/assets/conference-*.jpg`):**
-  - Real photograph from ICISC 2026 or AIESEC in Chennai leadership operations to display as an academic figure.
-  - Stock images are strictly banned and were not used.
-- [ ] **Final Camera-Ready ICISC 2026 Paper PDF (`/public/papers/Bias_Free_AI_Placement_ICISC2026.pdf`):**
-  - Replace the current preprint notice once official conference proceedings are indexed by publisher.
+This document tracks items that require external user assets or profile URLs. In accordance with Forward Deployed Engineering standards, no placeholders or fabricated facts were invented.
 
 ---
 
-## 2. Professional Profiles & Verification
+## 1. Assets Completed
+- [x] **Author Profile Photo (`/public/assets/profile.jpg`):**
+  - Copied directly from `C:\Users\Arjun R\Downloads\Arjun profile.jpg`.
+  - Rendered in the title page preprint block in high-contrast academic print format.
+- [x] **Resume PDF (`/public/resume.pdf`):**
+  - Downloadable CV verified and routed directly.
+
+---
+
+## 2. Professional Profiles
 - [ ] **LinkedIn Profile URL:**
   - Please provide your verified LinkedIn profile URL to link directly in the Contact block.
-- [ ] **KNS Law Chambers Compliance Audit Codebase:**
-  - The local repository was located at `CODING/court-audit-platform`. If you wish to make a sanitized public showcase repository on GitHub, we can link it directly under `Section 02`. Otherwise, it remains marked as *Private repository, walkthrough on request*.
+- [x] **GitHub Profile:**
+  - Linked to verified profile: [https://github.com/arjun-57](https://github.com/arjun-57).
 
 ---
 
-## 3. Verified Repository Map (Live & Linked)
-All project links on the site now point directly to your real, authentic GitHub repositories:
+## 3. Verified Project Codebase Map
+All project links point directly to your verified GitHub repositories matching your resume:
 - **Resilient Multi-Agent Energy Management System:** [https://github.com/arjun-57/MARL](https://github.com/arjun-57/MARL)
 - **Contra (Adversarial Multi-Agent Research Engine):** [https://github.com/arjun-57/Research-Contra](https://github.com/arjun-57/Research-Contra)
 - **Sine2Times (Diagnostic Mathematics Tutor):** [https://github.com/arjun-57/Sin2Times](https://github.com/arjun-57/Sin2Times)
 - **Bank Auction Property Intelligence System:** [https://github.com/arjun-57/BankEauctions](https://github.com/arjun-57/BankEauctions)
 - **JobSwipe (Placement Fairness Engine / ICISC 2026):** [https://github.com/arjun-57/JOBSWIPE](https://github.com/arjun-57/JOBSWIPE)
 - **Grand Magnum Operations Dashboard:** [https://github.com/arjun-57/GRAND-MAGNUM-AI-DASHBOARD](https://github.com/arjun-57/GRAND-MAGNUM-AI-DASHBOARD)
-- **GitHub Profile:** [https://github.com/arjun-57](https://github.com/arjun-57)
-- **Resume File:** [http://localhost:3000/resume.pdf](http://localhost:3000/resume.pdf) (copied to `/public/resume.pdf`)

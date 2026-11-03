@@ -48,12 +48,16 @@ export const TitleBlock: React.FC = () => {
           </div>
         </div>
 
-        {/* Square Author Portrait Placeholder / Monogram */}
-        <div className="flex-shrink-0 w-16 h-16 border border-paper-border dark:border-paper-borderDark bg-paper-surface dark:bg-paper-surfaceDark p-1 flex items-center justify-center text-center">
-          <div className="w-full h-full bg-paper-bg dark:bg-paper-darkBg flex flex-col items-center justify-center text-[10px] font-mono text-ink-muted dark:text-ink-mutedDark">
-            <span className="font-serif font-bold text-sm text-ink dark:text-ink-dark">AR</span>
-            <span className="text-[8px] uppercase">FDE</span>
-          </div>
+        {/* Square Author Portrait */}
+        <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 border border-paper-border dark:border-paper-borderDark bg-paper-surface dark:bg-paper-surfaceDark p-1 overflow-hidden">
+          <Image
+            src="/assets/profile.jpg"
+            alt="Arjun R"
+            width={80}
+            height={80}
+            className="w-full h-full object-cover rounded-sm grayscale contrast-125"
+            priority
+          />
         </div>
       </div>
 
@@ -100,3 +104,4 @@ export const TitleBlock: React.FC = () => {
     </section>
   );
 };
+

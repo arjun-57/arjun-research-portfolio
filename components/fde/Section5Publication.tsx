@@ -100,3 +100,4 @@ export const Section5Publication: React.FC = () => {
     </section>
   );
 };
+

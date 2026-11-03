@@ -112,3 +112,4 @@ export const Section8Contact: React.FC = () => {
     </section>
   );
 };
+

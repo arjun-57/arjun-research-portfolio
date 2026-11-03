@@ -114,3 +114,4 @@ export const TopBar: React.FC<TopBarProps> = ({ isProjectPage = false }) => {
     </header>
   );
 };
+
